@@ -1,0 +1,33 @@
+@import './variables';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    font-family: $myFont;
+    font-style: $myFontSize;
+    color: red;
+}
+
+.navigation {
+    width: $myWidth;
+    background-color: $bkColor;
+
+    & li > a {
+        text-decoration: none;
+    }
+}
+
+.menu {
+    @include ourBorder(blue, 1px);
+    background-color: $bkColorSecondary;
+
+    &__link {
+        background-color: white;
+        border: solid red;
+    }
+}

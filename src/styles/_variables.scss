@@ -1,0 +1,16 @@
+$myColor: red;
+$myFont: Helvetica, sans-serif;
+$myFontSize: 18px;
+$myWidth: 680px;
+$bkColor: peru;
+$bkColorSecondary: darksalmon;
+
+@mixin ourBorder($myColor, $myWidth) {
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 10px;
+
+    border: $myWidth solid $myColor;
+
+
+}
